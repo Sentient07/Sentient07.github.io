@@ -1,8 +1,196 @@
 <!DOCTYPE html>
-<HTML>
-	<HEAD>
-		<title>
-			This site is under construction and will be ready in a while. Do comeback soon! :) 
-		</title>
-	    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramana Sundararaman - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ramana Sundararaman</h1>
+        <p>PhD Student | Ecole Polytechnique, IP Paris</p>
+        <div class="social-links">
+            <a href="https://github.com/sentient07" target="_blank">
+                <img src="github-icon.png" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ramanasundararaman/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://scholar.google.fr/citations?user=ZaSbYCsAAAAJ&hl=en" target="_blank">
+                <img src="google-scholar-icon.png" alt="Google Scholar" class="icon">
+            </a>
+            <a href="mailto:vxrram.95@gmail.com">
+                <img src="email-icon.png" alt="Email" class="icon">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+    </nav>
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <img src="your-photo.jpg" alt="Your Photo">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        I am a final year PhD student at GeometriX team, in the computer science department of Ecole Polytechnique, Paris.
+                        I am working on Neural surface representation, reconstruction and correspondence, supervised by Maks Ovsjanikov.
+                        I have a Master's degree (MSc&T) in Artificial Intelligence and Advanced Visual Computing from Ecole Polytechnique and a
+                        Bachelor of Engineering (B.E (Hons)) in Electronics and Instrumentation Engineering from BITS Pilani, Goa, India.
+                    </p>
+                    <p>
+                        <strong> Currently in the job market looking for Research Scientist/Engineering role.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+            <div class="research-list">
+                <div class="paper">
+                    <img src="thumbnail1.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Deformation Recovery: Localized Learning for Detail-Preserving Deformations</strong></p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Nicolas Donati, Simone Melzi, Etienne Corman, Maks Ovsjanikov</p>
+                        <p> LJN is lightweight method for detail-preserving shape deformations using <em>local</em> Jacobians, where each triangle is considered as training example instead of the entire shape. LJN is thus data-friendly and can learn high-quality deformation (human) from as few as 60 pairs of shapes. </p>
+                        <p class="conference">Presented at: <em> SIGGRAPH-Asia, Tokyo, 2024</em></p>
+                        <div class="links">
+                            <a href="https://github.com/sentient07/LJN">GitHub</a>
+                            <a href="https://arxiv.org/pdf/2410.08225">Paper</a>
+                            <!-- <a href="supplementary-link">Supplementary</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail0.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Physical Property Estimation and Optimization via Constrained Latent Space Exploration</strong></p>
+                        <p> A 3D Generative approach that estimates and improves physical properties while ensuring geometric plausibility by using latent space sampling within convex polytopes. Introduces a new dataset of annotated bottles. </p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Jiqiong Qiu, Romain Savajano, Matthieu Pichaud, Maks Ovsjanikov</p>
+                        <p class="conference"> Under-Review, 2024. </em></p>
+                        <div class="links">
+                            <a href="PhysicalLSO_.pdf" target="_blank"> Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail2.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Self-Supervised Dual Contouring</strong></p>
+                        <p>SDC introduces self-supervised dual contouring for isosurface extraction, replacing supervised training with novel losses enforcing mesh-SDF consistency. It improves mesh extraction from SDFs that are produced by Deep Networks. </p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Roman Klokov, Maks Ovsjanikov</p>
+                        <p class="conference">Presented at: <em>CVPR (<strong>Spotlight</strong>), Seattle, 2024</em></p>
+                        <div class="links">
+                            <a href="https://github.com/Sentient07/SDC">GitHub</a>
+                            <a href="https://www.lix.polytechnique.fr/~maks/papers/CVPR24_SDC.pdf">Paper</a>
+                            <a href="https://www.lix.polytechnique.fr/~maks/papers/CVPR24_SDC_sup_mat.pdf">Supplementary</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail3.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Reduced representation of deformation fields for effective non-rigid shape matching</strong></p>
+                        <p> Marrying mesh-free approximation method with MLPs for non-rigid shape correspondence. Learning reduced deformation parameters to reconstruct smooth deformation, our approach enables efficient, limited supervision and achieves state-of-the-art results on shape matching benchmarks.</p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Riccardo Marin, Emanuele Rodola, Maks Ovsjanikov</p>
+                        <p class="conference">Presented at: <em>NeurIPS, New Orleans, 2022</em></p>
+                        <div class="links">
+                            <a href="https://github.com/Sentient07/DeformationBasis">GitHub</a>
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/43d1d3bdd92204c96fa4ac3c578f6a33-Paper-Conference.pdf">Paper</a>
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/43d1d3bdd92204c96fa4ac3c578f6a33-Supplemental-Conference.pdf">Supplementary</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail4.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Implicit field supervision for robust non-rigid shape matching.</strong></p>
+                        <p> An auto-decoder framework which learns continuous deformation fields for shape deformation, using Signed Distance Functions (SDFs) as regularization. Achieves strong performance on noisy, real-world data despite training on clean meshes.</p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Gautam Pai, Maks Ovsjanikov</p>
+                        <p class="conference">Presented at: <em> ECCV (<strong>Oral</strong>), Tel-Aviv, 2022</em></p>
+                        <div class="links">
+                            <a href="https://github.com/Sentient07/IFMatch">GitHub</a>
+                            <a href="https://www.lix.polytechnique.fr/~maks/papers/ImplicitShapeCorr_ECCV2022.pdf">Paper</a>
+                            <a href="https://www.lix.polytechnique.fr/~maks/papers/ImplicitShapeCorr_ECCV2022_sup.pdf">Supplementary</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail5.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Tracking pedestrian heads in dense crowd.</strong></p>
+                        <p> We introduce CroHD, a large annotated dataset for tracking in dense crowds, along with IDEucl metric to evaluate identity preservation. We also propose HeadHunter, a head detector combined with particle-filter-based tracking framework, which acheives superior results compared to state-of-the-art pedestrian trackers.</p>
+                        <p class="authors">Authors: <strong>Ramana Sundararaman</strong>, Cedric Braga, Eric Marchand, Julien Pettre</p>
+                        <p class="conference">Presented at: <em>CVPR, (Virtual), 2021</em></p>
+                        <div class="links">
+                            <a href="https://github.com/Sentient07/HeadHunter">GitHub</a>
+                            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sundararaman_Tracking_Pedestrian_Heads_in_Dense_Crowd_CVPR_2021_paper.pdf">Paper</a>
+                            <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Sundararaman_Tracking_Pedestrian_Heads_CVPR_2021_supplemental.pdf">Supplementary</a>
+                            <a href="https://motchallenge.net/data/Head_Tracking_21/">Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="paper">
+                    <img src="thumbnail6.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>Solving Inverse Computational Imaging Problems using Deep Pixel-level Prior.</strong></p>
+                        <p> Uses autoregressive models as flexible signal priors for inverse imaging problems, enabling better reconstruction of images with texture. </p>
+                        <p class="authors">Authors: Akshat Dave, Anil Vadathya, <strong>Ramana Sundararaman</strong>, Rahul Baburajan, Kaushik Mitra</p>
+                        <p class="conference">Accepted at: <em>Transactions on Computational Imaging, 2018</em></p>
+                        <div class="links">
+                            <!-- <a href="https://github.com/Sentient07/HeadHunter">GitHub</a> -->
+                            <a href="https://arxiv.org/abs/1802.09850">Paper</a>
+                            <!-- <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Sundararaman_Tracking_Pedestrian_Heads_CVPR_2021_supplemental.pdf">Supplementary</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper">
+                    <img src="thesis_logo.png" alt="Paper Thumbnail">
+                    <div class="paper-details">
+                        <p><strong>.</strong></p>
+                        <p> Implicit latent space exploration for Shape Optimisation and Correspondence. </p>
+                        <p class="conference">Master's Thesis, 2020</em></p>
+                        <div class="links">
+                            <!-- <a href="https://github.com/Sentient07/HeadHunter">GitHub</a> -->
+                            <a href="masters_thesis.pdf" target="_blank">Thesis (PDF)</a>
+                            <!-- <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Sundararaman_Tracking_Pedestrian_Heads_CVPR_2021_supplemental.pdf">Supplementary</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more papers as needed -->
+            </div>
+        </section>
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul>
+                <li>
+                    <strong>Computer Graphics</strong> - CSE-306, Ecole Polytechnique
+                    <!-- <p>Brief description of the course.</p> -->
+                </li>
+                <li>
+                    <strong>Geometric Deep Learning</strong> - INF-631, Ecole Polytechnique
+                    <!-- <p>Brief description of the course.</p> -->
+                </li>
+                <li>
+                    <strong>Computer Animation</strong> - INF-633, Ecole Polytechnique
+                    <!-- <p>Brief description of the course.</p> -->
+                </li>
+                <li>
+                    <strong>GIntroduction to Computer Science/Programming</strong> - INF-361, Ecole Polytechnique
+                    <!-- <p>Brief description of the course.</p> -->
+                </li>
+                <!-- Add more courses as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ramana Sundararaman. All rights reserved.</p>
+    </footer>
+</body>
 </html>
