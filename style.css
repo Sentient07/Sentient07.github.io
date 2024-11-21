@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.authors {
+    font-size: 0.9rem; /* Slightly smaller than the main text */
+    color: #333; /* Darker text for emphasis */
+    margin-top: 0.5rem; /* Add space above */
+    font-style: italic; /* Optional: italicize the authors' names */
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #f4f4f4;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Add spacing between sections to avoid overlap */
+section {
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* About section image and text styling */
+#about {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align the image and text */
+    gap: 2rem; /* Add space between the image and text */
+    margin-bottom: 2rem; /* Add spacing below the section */
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevent the image from resizing */
+}
+
+#about p {
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+/* Research section styling */
+#research {
+    margin-top: 2rem; /* Add space above the Research section */
+}
+
+.research-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem; /* Space between research papers */
+}
+
+.paper {
+    display: flex;
+    align-items: flex-start; /* Align text and image at the top */
+    border: 1px solid #ccc;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.paper img {
+    width: 300px; /* Adjust the width for larger images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners */
+    object-fit: cover; /* Ensures proper cropping if necessary */
+}
+
+.paper-details {
+    flex: 1; /* Allow the details to expand */
+}
+
+.conference {
+    font-size: 0.9rem; /* Slightly smaller than the main text */
+    color: #555; /* Subtle color for secondary information */
+    margin-top: 0.5rem;
+}
+
+.links a {
+    margin-right: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #f4f4f4;
+    margin-top: 2rem; /* Add space above the footer */
+}
+
+.social-links {
+    margin-top: 1rem; /* Add some spacing above the icons */
+    display: flex;
+    justify-content: center; /* Center align the icons */
+    gap: 1rem; /* Add spacing between icons */
+}
+
+.social-links a {
+    text-decoration: none; /* Remove underline for links */
+}
+
+.social-links .icon {
+    width: 30px; /* Icon size */
+    height: 30px;
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.social-links .icon:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+#about {
+    margin-bottom: 2rem; /* Space below the About section */
+}
+
+.about-content {
+    display: flex; /* Flexbox layout for side-by-side alignment */
+    align-items: flex-start; /* Align image and content at the top */
+    gap: 2rem; /* Space between image and text */
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+#about h2 {
+    margin-top: 0; /* Remove default margin above the subtitle */
+    font-size: 1.5rem; /* Adjust subtitle size */
+    font-weight: bold;
+}
+
+#about p:last-child {
+    margin-top: 1rem; /* Add spacing above the last paragraph */
+    font-weight: bold; /* Emphasize the job market sentence */
+}
