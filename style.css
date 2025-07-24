@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #fdfdfd;
+    color: #1e1e1e;
 }
 
 .authors {
@@ -15,13 +17,20 @@ body {
 header {
     text-align: center;
     padding: 1.5rem 0;
-    background: #f4f4f4;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
 }
 
 nav {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: #1a1a1a;
     color: white;
 }
 
@@ -29,6 +38,11 @@ nav a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff6f3c;
+    border-bottom: 2px solid #ff6f3c;
 }
 
 main {
@@ -41,7 +55,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #ff6f3c;
     padding-bottom: 0.5rem;
 }
 
@@ -131,7 +145,7 @@ footer {
 }
 
 .social-links .icon:hover {
-    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    transform: scale(1.25) rotate(2deg); /* Slightly enlarge and rotate icon on hover */
 }
 
 #about {
@@ -159,4 +173,13 @@ footer {
 #about p:last-child {
     margin-top: 1rem; /* Add spacing above the last paragraph */
     font-weight: bold; /* Emphasize the job market sentence */
+}
+
+#projects {
+    background-color: #fafafa;
+    padding: 2rem;
+    border: 1px dashed #ddd;
+    text-align: center;
+    font-style: italic;
+    color: #777;
 }
