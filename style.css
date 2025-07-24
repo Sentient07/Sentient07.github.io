@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 body {
     font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
@@ -90,17 +91,19 @@ h2 {
 
 .paper {
     display: flex;
-    align-items: flex-start; /* Align text and image at the top */
+    align-items: flex-start;
     border: 1px solid #ccc;
     padding: 1rem;
     gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .paper img {
-    width: 300px; /* Adjust the width for larger images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: Rounded corners */
-    object-fit: cover; /* Ensures proper cropping if necessary */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .paper-details {
@@ -117,6 +120,21 @@ h2 {
     margin-right: 1rem;
     color: #007BFF;
     text-decoration: none;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.coming-soon {
+    color: #007BFF;
+    font-style: italic;
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
 }
 
 /* Footer styling */
@@ -182,4 +200,33 @@ footer {
     text-align: center;
     font-style: italic;
     color: #777;
+}
+
+@media (max-width: 768px) {
+    .paper {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .paper-details {
+        width: 100%;
+    }
+    .paper .thumb {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0.25rem 0.5rem;
+        font-size: 0.95rem;
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #about img {
+        margin-bottom: 1rem;
+    }
 }
